@@ -1,65 +1,36 @@
-import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Layout from '../components/layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout home title="Meikai-sa | Karate Project">
+      <img src="/karate.png" className="top-image"></img>
+  
+      <p>
+      <span className="font-big font-bold">
+      "The more understanding you have about Karate, the less you need to change or modify it." </span> <small> – <strong>Tsuguo Sakumoto</strong> (mantan juara Karate Dunia and guru besar Karate Ryuei-ryu ) </small>
+      </p>
+      <br/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <h1>Perkenalan</h1>
+      <p className="justify">
+        <strong>Meika-sa (明快さ = Clarity)</strong> adalah proyek pendalaman ilmu beladiri Karate yang dibuat oleh Malik Aljun (praktisi Karate aliran Wadokai Indonesia). Berawal dari keraguannya dalam melanjutkan aliran Karate Indonesia di Dojo yang diikutinya, Ia menemukan ketidaksesuaian dan kesalahan makna yang diajarkan terhadap Karate sejatinya. 
+        <br/>
+        <br/>
+        Didukung oleh teman sejawatnya, terbentuklah ide untuk mempelajari Karate tanpa mengikuti aliran perguruan Indonesia. Dengan harapan untuk bisa memahami esensi dari beladiri Karate. Proyek ini berfokus untuk eksplorasi <strong>True Karate</strong> tanpa terikat aliran perguruan manapun.
         </p>
+        <br/>
+        <br/>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <ul className="styled-list font-big">
+        <li>
+          <Link href="/posts/cara-bergabung">Bergabung Sekarang</Link>
+        </li>
+        <li>
+          <Link href="/posts/jadwal-latihan">Jadwal Latihan</Link>
+        </li>
+      </ul>
+    </Layout>
   )
 }
