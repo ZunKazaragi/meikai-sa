@@ -2,14 +2,14 @@ import Head from 'next/head';
 import styles from './Layout.module.css';
 import Link from 'next/link';
 
-const name = "Meika-sa 明快さ";
+const name = "Project Meikaisa";
 
 export default function Layout({children, home, title}) {
 
     return (
         <>
         <Head>
-            <link rel="icon" href="/favicon.ico"/>
+            <link rel="icon" href="/logo-2.ico"/>
             <title>{title}</title>
             <meta 
                 name="description"

@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 export default function Home() {
   return (
     <Layout home title="Meikai-sa | Karate Project">
-      <img src="/karate.png" className="top-image"></img>
+      <img src="/logo-2-meikaisa.svg" className="top-image"></img>
   
       <p>
       <span className="font-big font-bold">
